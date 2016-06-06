@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/actionBar"
+        layout="@layout/view_actionbar" />
+
+    <LinearLayout
+        android:id="@id/ll_group_avatar"
+        android:layout_width="fill_parent"
+        android:layout_height="180.0dip"
+        android:background="@color/primarybar_split_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+            <com.greentechplace.lvkebangapp.ui.widget.CircleImageView
+                android:id="@id/civ_group_avatar"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:src="@drawable/default_avatar"
+                app:border_color="@color/ui_dialog_list_text"
+                app:border_width="2.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <LinearLayout
+            android:id="@id/create_group_body_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/rl_name"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip">
+
+                <TextView
+                    android:id="@id/name_of_group_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="群组名称"
+                    android:textColor="@color/main_black"
+                    android:textSize="17.0dip" />
+
+                <TextView
+                    android:id="@id/tv_name"
+                    style="@style/orange_text_style"
+                    android:layout_alignBottom="@id/name_of_group_tx"
+                    android:layout_toLeftOf="@id/next_group_name"
+                    android:layout_toStartOf="@id/next_group_name"
+                    android:ellipsize="end"
+                    android:maxLength="8"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@id/tv_name_real"
+                    style="@style/orange_text_style"
+                    android:layout_alignBottom="@id/name_of_group_tx"
+                    android:layout_toLeftOf="@id/next_group_name"
+                    android:layout_toStartOf="@id/next_group_name"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@id/next_group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/list_next" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/primarybar_split_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_industry"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip">
+
+                <TextView
+                    android:id="@id/industry_type_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="行业类型"
+                    android:textColor="@color/main_black"
+                    android:textSize="17.0dip" />
+
+                <TextView
+                    android:id="@id/tv_industry"
+                    style="@style/orange_text_style"
+                    android:layout_alignBottom="@id/industry_type_tx"
+                    android:layout_toLeftOf="@id/next_industry_type"
+                    android:layout_toStartOf="@id/next_industry_type" />
+
+                <TextView
+                    android:id="@id/tv_industry_real"
+                    style="@style/orange_text_style"
+                    android:layout_alignBottom="@id/industry_type_tx"
+                    android:layout_toLeftOf="@id/next_industry_type"
+                    android:layout_toStartOf="@id/next_industry_type"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@id/next_industry_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/list_next" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/primarybar_split_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_label"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip">
+
+                <TextView
+                    android:id="@id/group_tag_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="群组标签"
+                    android:textColor="@color/main_black"
+                    android:textSize="17.0dip" />
+
+                <TextView
+                    android:id="@id/tv_label"
+                    style="@style/orange_text_style"
+                    android:layout_alignBottom="@id/group_tag_tx"
+                    android:layout_toLeftOf="@id/group_tag_type"
+                    android:layout_toStartOf="@id/group_tag_type" />
+
+                <TextView
+                    android:id="@id/tv_label_real"
+                    style="@style/orange_text_style"
+                    android:layout_alignBottom="@id/group_tag_tx"
+                    android:layout_toLeftOf="@id/group_tag_type"
+                    android:layout_toStartOf="@id/group_tag_type"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@id/group_tag_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/list_next" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/primarybar_split_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip">
+
+                <TextView
+                    android:id="@id/group_desc_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="群组简介"
+                    android:textColor="@color/main_black"
+                    android:textSize="17.0dip" />
+
+                <TextView
+                    android:id="@id/tv_desc"
+                    style="@style/orange_text_style"
+                    android:layout_alignBottom="@id/group_desc_tx"
+                    android:layout_toLeftOf="@id/next_group_tag_type"
+                    android:layout_toStartOf="@id/next_group_tag_type"
+                    android:ellipsize="end"
+                    android:maxLength="5"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@id/tv_desc_real"
+                    style="@style/orange_text_style"
+                    android:layout_alignBottom="@id/group_desc_tx"
+                    android:layout_toLeftOf="@id/next_group_tag_type"
+                    android:layout_toStartOf="@id/next_group_tag_type"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@id/next_group_tag_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/list_next" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

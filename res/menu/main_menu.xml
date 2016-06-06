@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lkb="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/actionbar_icon_group_add" android:id="@id/main_menu_chat_add" android:visible="false" android:menuCategory="system" android:orderInCategory="2" android:title="菜单" lkb:showAsAction="always" />
+    <item android:icon="@drawable/nav_picture" android:id="@id/main_menu_photo_add" android:visible="false" android:menuCategory="system" android:orderInCategory="2" lkb:showAsAction="always" />
+    <item android:icon="@drawable/column_set" android:id="@id/column_set" android:visible="false" android:menuCategory="system" android:orderInCategory="2" lkb:showAsAction="always" />
+    <item android:icon="@drawable/column_share" android:id="@id/column_share" android:visible="false" android:menuCategory="system" android:orderInCategory="2" lkb:showAsAction="always" />
+    <item android:id="@id/main_menu_finish_add" android:visible="false" android:menuCategory="system" android:orderInCategory="2" android:title="完成" lkb:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_icon_group_add" android:id="@id/main_menu_group_add" android:visible="false" android:menuCategory="system" android:orderInCategory="2" android:title="菜单" lkb:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_icon_chat_post" android:id="@id/main_menu_chat_post" android:visible="false" android:orderInCategory="2" android:title="@string/main_menu_chat_post" lkb:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_icon_search" android:id="@id/main_menu_search" android:visible="false" android:orderInCategory="3" android:title="@string/main_menu_search" lkb:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_icon_huati_info" android:id="@id/main_menu_group_huati" android:visible="false" android:menuCategory="system" android:orderInCategory="1" android:title="@string/actionbar_title_huati_detail" lkb:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_icon_group_setting" android:id="@id/main_menu_group_setting" android:visible="false" android:menuCategory="system" android:orderInCategory="3" android:title="@string/main_menu_gourp_detail" lkb:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_icon_user_info" android:id="@id/main_menu_user_info" android:visible="false" android:orderInCategory="3" android:title="@string/main_menu_user_detail" lkb:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_icon_begin_chat" android:id="@id/main_menu_begin_chat" android:visible="false" android:orderInCategory="3" android:title="@string/main_menu_begin_chat" lkb:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_icon_share" android:id="@id/main_menu_share" android:visible="false" android:orderInCategory="3" android:title="@string/main_menu_share" lkb:showAsAction="ifRoom" />
+    <item android:icon="@drawable/actionbar_icon_chat_post" android:id="@id/main_menu_group_create_wenda" android:visible="false" android:title="@string/actionbar_title_wenda_detail" lkb:showAsAction="always" />
+    <item android:id="@id/send_question" android:visible="false" android:title="提问" lkb:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_icon_chat_post" android:id="@id/main_menu_group_create_topic" android:visible="false" android:title="@string/actionbar_title_huati_detail" lkb:showAsAction="always" />
+</menu>

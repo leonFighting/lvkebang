@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ta_tab" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@color/text_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/linearLayout2" android:layout_alignParentLeft="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="@dimen/space_50" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/tab_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/space_50">
+                <ImageView android:id="@id/tab_icon" android:focusable="false" android:layout_width="@dimen/space_23" android:layout_height="@dimen/space_22" android:contentDescription="@null" />
+                <TextView android:textSize="@dimen/smaller_text_size" android:textColor="@color/primarybar_txt" android:id="@id/tab_titile" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@android:color/white" android:gravity="center" android:id="@id/unread_address_number" android:background="@drawable/unread_count_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_5" android:layout_marginRight="@dimen/space_10" android:text="0" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

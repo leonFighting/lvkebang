@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/space_10" android:paddingRight="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="@dimen/space_89">
+        <RelativeLayout android:id="@id/avatar_container" android:paddingTop="@dimen/space_10" android:paddingBottom="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.greentechplace.lvkebangapp.ui.AvatarView android:id="@id/iv_avatar" android:layout_width="70.0dip" android:layout_height="61.0dip" android:layout_marginRight="@dimen/space_10" android:scaleType="fitCenter" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/relativeLayout" android:paddingTop="@dimen/space_10" android:paddingBottom="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar_container" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/main_black" android:ellipsize="end" android:id="@id/tv_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/smaller_text_size" android:textColor="@color/main_black_6" android:ellipsize="end" android:id="@id/tv_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_black_6" android:ellipsize="end" android:id="@id/tv_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_5" android:text="333" android:maxLines="1" android:layout_below="@id/tv_title" />
+        </RelativeLayout>
+        <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </RelativeLayout>
+</RelativeLayout>

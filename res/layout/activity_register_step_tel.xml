@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/main_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/register_username_tel" android:layout_centerHorizontal="true" />
+            <LinearLayout android:id="@id/regist_phonenumble" style="@style/item_input_container">
+                <EditText android:id="@id/et_username_tel_first" android:hint="@string/hint_username_tel_tip" style="@style/item_input_edittext" />
+                <ImageView android:id="@id/iv_clear_username_tel" android:visibility="gone" android:contentDescription="@null" style="@style/item_input_clear" />
+                <Button android:id="@id/restart_password_re" android:background="@drawable/ic_background_black_setpassword" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/register_iv_le" android:background="@drawable/edt_all_background" android:layout_marginTop="10.0dip" style="@style/item_input_container">
+                <EditText android:id="@id/et_verify" android:background="@null" android:hint="@string/hint_verification_code_tip" style="@style/item_input_edittext" />
+                <ImageView android:id="@id/register_vi_cle" android:visibility="gone" android:contentDescription="@null" style="@style/item_input_clear" />
+            </LinearLayout>
+            <Button android:id="@id/btn_register_tel" android:layout_marginLeft="9.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="10.0dip" android:text="@string/next_step" style="@style/button_common_green" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_10" android:layout_marginBottom="@dimen/space_10">
+                <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/common_link_text_color" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/agree" />
+                <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/gray_link_text_color" android:id="@id/register_user_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register_user_agreement" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

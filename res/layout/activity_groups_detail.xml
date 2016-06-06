@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <RelativeLayout android:id="@id/group_main_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/group_info_container" android:background="@drawable/list_item_background" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top_small" android:layout_alignParentTop="true">
+                    <RelativeLayout android:id="@id/my_fragment_info" android:layout_width="336.0dip" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/iv_avatar" android:layout_width="@dimen/avatar_size_big" android:layout_height="@dimen/avatar_size_big" android:layout_marginLeft="15.0dip" android:scaleType="centerInside" android:contentDescription="@null" />
+                        <TextView android:textSize="@dimen/big_text_size" android:textColor="@color/main_black" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignLeft="@id/tv_content" android:layout_alignTop="@id/iv_avatar" />
+                        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_gray" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:maxLines="3" android:singleLine="false" android:layout_toRightOf="@id/iv_avatar" android:layout_below="@id/tv_name" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/imageView3" android:background="@drawable/group_detail_right" android:layout_width="8.0dip" android:layout_height="16.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/group_subject_container" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top_small" android:layout_below="@id/group_info_container">
+                    <LinearLayout android:id="@id/group_huati_container" style="@style/group_item_number_people">
+                        <TextView android:id="@id/group_subject_name" android:paddingLeft="@dimen/space_20" style="@style/group_item_number_people_nor" />
+                        <TextView android:gravity="end|center" android:id="@id/group_subject_count" android:paddingRight="@dimen/space_20" style="@style/group_item_number_people_nor" />
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:background="@drawable/group_detail_right" android:layout_width="8.0dip" android:layout_height="16.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/group_member_container" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top_small" android:layout_below="@id/group_subject_container">
+                    <LinearLayout android:id="@id/group_member_label_container" style="@style/group_item_container">
+                        <TextView android:id="@id/group_member_label" style="@style/group_item_text" />
+                        <TextView android:gravity="end|center" android:paddingRight="@dimen/space_20" style="@style/group_item_text" />
+                    </LinearLayout>
+                    <android.support.v4.view.ViewPager android:layout_gravity="center_vertical" android:id="@id/group_member_pager" android:layout_width="wrap_content" android:layout_height="0.0dip" android:minWidth="1.0dip" />
+                    <RelativeLayout android:id="@id/group_member_btn_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/group_member_addbtn" android:background="@drawable/group_member_btn_add_background" android:layout_width="@dimen/space_30" android:layout_height="@dimen/space_30" android:layout_marginLeft="20.0dip" android:layout_marginBottom="@dimen/space_5" android:scaleType="fitCenter" />
+                        <ImageView android:id="@id/group_member_removebtn" android:background="@drawable/group_member_btn_remove_background" android:layout_width="@dimen/space_30" android:layout_height="@dimen/space_30" android:layout_marginLeft="40.0dip" android:layout_marginBottom="@dimen/space_5" android:scaleType="fitCenter" android:layout_toRightOf="@id/group_member_addbtn" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/group_function" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top_small" android:layout_below="@id/group_member_container">
+                    <LinearLayout android:id="@id/group_qrcode_container" android:visibility="gone" style="@style/group_item_container">
+                        <TextView android:id="@id/group_qrcode" android:text="群二维码" style="@style/group_item_text" />
+                    </LinearLayout>
+                    <View android:id="@id/group_qrcode_container_divider" style="@style/select_list_divider" />
+                    <LinearLayout android:id="@id/group_isadmin_container" style="@style/group_item_container">
+                        <TextView android:id="@id/group_isadmin_label" style="@style/group_item_text" />
+                        <com.greentechplace.lvkebangapp.ui.tooglebutton.ToggleButton android:id="@id/group_isadmin_toggle" android:layout_width="65.0dip" android:layout_height="30.0dip" toggle:bordersWidth="0.100000024dip" toggle:onColor="@color/main_green"
+                          xmlns:toggle="http://schemas.android.com/apk/res/com.greentechplace.lvkebangapp" />
+                    </LinearLayout>
+                    <View android:id="@id/group_isadmin_container_divider" style="@style/select_list_divider" />
+                    <LinearLayout android:id="@id/group_topchat_container" android:visibility="gone" style="@style/group_item_container">
+                        <TextView android:text="置顶聊天" style="@style/group_item_text" />
+                        <com.greentechplace.lvkebangapp.ui.tooglebutton.ToggleButton android:layout_width="65.0dip" android:layout_height="30.0dip" toggle:bordersWidth="0.100000024dip" toggle:onColor="@color/main_green"
+                          xmlns:toggle="http://schemas.android.com/apk/res/com.greentechplace.lvkebangapp" />
+                    </LinearLayout>
+                    <View android:id="@id/group_topchat_container_divider" android:visibility="gone" style="@style/select_list_divider" />
+                    <LinearLayout android:id="@id/group_notmsg_container" android:visibility="gone" style="@style/group_item_container">
+                        <TextView android:text="不接收群消息" style="@style/group_item_text" />
+                        <com.greentechplace.lvkebangapp.ui.tooglebutton.ToggleButton android:id="@id/group_nomsg_toggle_btn" android:layout_width="65.0dip" android:layout_height="30.0dip" toggle:bordersWidth="0.100000024dip" toggle:onColor="@color/main_green"
+                          xmlns:toggle="http://schemas.android.com/apk/res/com.greentechplace.lvkebangapp" /> toggle:onColor="@color/main_green" />
+</LinearLayout>
+                    <View style="@style/select_list_divider" />
+                    <LinearLayout android:id="@id/group_clearmsg_container" style="@style/group_item_container">
+                        <TextView android:id="@id/group_clear_msg" style="@style/group_item_text" />
+                    </LinearLayout>
+                    <View android:visibility="gone" style="@style/select_list_divider" />
+                    <LinearLayout android:id="@id/group_add_user_container" android:visibility="gone" style="@style/group_item_container">
+                        <TextView android:id="@id/group_add_user" style="@style/group_item_text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <RelativeLayout android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:id="@id/btn_submit" android:layout_marginLeft="12.0dip" android:layout_marginTop="@dimen/select_item_container_margin_top_small" android:layout_marginRight="12.0dip" android:text="@string/button_creat_group" style="@style/button_common_green" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <HorizontalScrollView android:layout_gravity="right" android:id="@id/horizontalScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

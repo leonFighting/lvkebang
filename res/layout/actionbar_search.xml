@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/space_4" android:paddingRight="@dimen/space_16" android:paddingBottom="@dimen/space_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/search_editext_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8" android:src="@drawable/search_edit_top_img_2" />
+            <EditText android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:textColorHint="@color/graywhite" android:id="@id/et_content" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8" android:layout_marginRight="@dimen/space_8" android:minHeight="35.0dip" android:hint="@string/hint_search" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/ib_clear" android:background="@null" android:paddingLeft="@dimen/space_8" android:paddingRight="@dimen/space_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_prompt_dismiss" />
+        </LinearLayout>
+        <ImageButton android:id="@id/ib_search" android:background="@drawable/radionbutton_rec_selector" android:paddingLeft="@dimen/space_8" android:paddingRight="@dimen/space_8" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/space_8" android:src="@drawable/btn_search_icon" />
+    </LinearLayout>
+</LinearLayout>

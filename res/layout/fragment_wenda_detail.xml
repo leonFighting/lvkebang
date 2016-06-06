@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.greentechplace.lvkebangapp.ui.widget.FixedRecyclerView android:id="@id/recycleView" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#ffffffff" android:divider="@null" android:dividerHeight="0.0dip" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    <com.greentechplace.lvkebangapp.ui.empty.EmptyLayout android:id="@id/error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

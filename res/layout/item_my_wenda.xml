@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/main_black" android:id="@id/my_wenda_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="联网农业到底该做些什么么联网农业到底该做些什么么？" android:layout_toLeftOf="@id/my_wenda_cover" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_gray" android:ellipsize="end" android:id="@id/my_wenda_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="中国三大产业中，农业作为第一大产业，其相关环节众多，市场空间巨大，按照农作物经营流程可分为：产前，产中，产后" android:lines="2" android:layout_toLeftOf="@id/my_wenda_cover" android:layout_below="@id/my_wenda_title" android:layout_alignLeft="@id/my_wenda_title" />
+            <ImageView android:id="@id/my_wenda_cover" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="25.0dip">
+            <ImageView android:id="@id/imageView6" android:background="@drawable/focus_topic" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="14.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_gray" android:id="@id/my_wenda_reply_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="11" android:layout_toRightOf="@id/imageView6" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_gray" android:id="@id/my_wenda_focus_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="2人关注" android:layout_toRightOf="@id/my_wenda_reply_num" android:layout_alignTop="@id/my_wenda_reply_num" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

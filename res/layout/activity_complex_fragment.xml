@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.ksoichiro.android.observablescrollview.TouchInterceptionFrameLayout android:id="@id/container" android:background="@color/window_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/pager_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/realtabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/actionBar" layout="@layout/view_actionbar" />
+            <com.greentechplace.lvkebangapp.ui.tab.SlidingTabLayout android:id="@id/sliding_tabs" android:background="@color/tab_strip_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/tab_height" />
+        </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.TouchInterceptionFrameLayout>
+</FrameLayout>

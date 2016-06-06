@@ -1,42 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:background="@drawable/mm_listitem"
-    android:gravity="center_vertical" >
-
-    <RelativeLayout
-        android:id="@+id/rl_group"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <ImageView
-            android:id="@+id/avatar"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="4dp"
-            android:padding="5dp"
-            android:src="@drawable/roominfo_add_btn" />
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="7dp"
-            android:layout_toRightOf="@id/avatar"
-            android:text="@string/newchat"
-            android:textColor="#8C8C8C"
-            android:textSize="18sp" />
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/rl_group"
-        android:background="#E0E0E0"
-        android:visibility="gone" />
-
+<RelativeLayout android:background="@drawable/contact_listitem" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_10" android:paddingRight="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/space_62">
+            <ImageView android:id="@id/avatar" android:layout_width="@dimen/space_43" android:layout_height="@dimen/space_43" android:layout_marginRight="@dimen/space_10" android:src="@drawable/create_group" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/main_black" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/space_1" />
+    </LinearLayout>
 </RelativeLayout>

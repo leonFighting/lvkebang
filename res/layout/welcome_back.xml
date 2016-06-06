@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.greentechplace.lvkebangapp.ui.widget.CircleImageView
+        android:id="@id/welcome_useravatar"
+        android:layout_width="@dimen/w99"
+        android:layout_height="@dimen/w99"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/h77"
+        android:src="@drawable/create_group" />
+
+    <TextView
+        android:id="@id/welcome_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/h10"
+        android:textColor="@color/black"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/h25"
+        android:text="欢迎回来绿科邦！"
+        android:textColor="@color/black"
+        android:textSize="26.0sp" />
+</LinearLayout>

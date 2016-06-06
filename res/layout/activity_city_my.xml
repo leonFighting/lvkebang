@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <TextView android:visibility="gone" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_13" android:text="@string/lable_my_location" style="@style/text_lable" />
+    <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+        <LinearLayout android:id="@id/ll_location" style="@style/select_item_container">
+            <TextView android:id="@id/tv_location" android:text="@string/locating" style="@style/select_item_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_10" android:layout_marginBottom="@dimen/space_10" android:text="@string/lable_all_location" style="@style/text_lable" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/list" android:background="@android:color/transparent" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" android:fastScrollEnabled="false" android:fastScrollAlwaysVisible="false" />
+    </FrameLayout>
+</LinearLayout>

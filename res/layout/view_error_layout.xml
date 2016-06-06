@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pageerrLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img_error_layout" android:background="@drawable/page_icon_error" android:visibility="gone" android:layout_width="@dimen/error_icon_size" android:layout_height="@dimen/error_icon_size" android:scaleType="fitXY" />
+                <ProgressBar android:id="@id/animProgress" android:visibility="visible" android:indeterminate="false" android:layout_centerInParent="true" style="@style/ListSpinner" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/smaller_text_size" android:textColor="@color/main_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_error_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/error_view_click_to_refresh" android:lines="2" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/find" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/dynamic_name" android:id="@id/find_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="还没有关注的动态，赶快去发现看看吧" android:layout_centerInParent="true" />
+            <ImageButton android:id="@id/find_more" android:background="@drawable/btn_found" android:layout_width="165.0dip" android:layout_height="60.0dip" android:layout_below="@id/find_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/login_bak" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="138.0dip" android:layout_height="168.0dip" android:layout_marginTop="@dimen/space_13" android:src="@drawable/lvk_start_icon" />
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_gray" android:layout_gravity="center_horizontal" android:id="@id/tv_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:layout_marginTop="@dimen/space_13" style="@style/select_list_divider" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/main_black" android:padding="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_desc" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

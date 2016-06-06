@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <RelativeLayout android:background="@drawable/edt_all_background" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip">
+        <EditText android:textSize="@dimen/abc_action_bar_content_inset_material" android:textColor="@color/black" android:textColorHint="@color/input_hint_gray" android:id="@id/ed_education_background" android:background="@drawable/edt_all_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="院校名称或学历" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+            <RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/main_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/my_collection_title" android:layout_width="wrap_content" android:layout_height="39.0dip" android:text="农业互联网现状是什么？" android:maxLines="2" android:layout_toLeftOf="@id/my_collection_cover" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/my_collection_cover" android:visibility="visible" android:layout_width="52.0dip" android:layout_height="39.0dip" android:layout_marginLeft="12.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/relativeLayout6" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linearLayout" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_gray" android:id="@id/my_collection_reply_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="24" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            <ImageView android:id="@id/topic" android:background="@drawable/focus_topic" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/my_collection_reply_num" android:layout_alignParentTop="true" android:layout_toStartOf="@id/my_collection_reply_num" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/green" android:id="@id/my_collection_column_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="东京热的专栏" android:layout_toRightOf="@id/laiziqunzu" android:layout_alignParentTop="true" android:layout_toEndOf="@id/laiziqunzu" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/input_hint_gray" android:id="@id/laiziqunzu" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来自专栏:" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

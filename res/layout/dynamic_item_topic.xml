@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_user_info" />
+    <RelativeLayout android:id="@id/middle" android:background="@drawable/bg_dynamic_item_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip">
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/alert_chat_divider_color" android:id="@id/content" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="5" />
+    </RelativeLayout>
+    <include layout="@layout/view_comment_and_like" />
+</LinearLayout>

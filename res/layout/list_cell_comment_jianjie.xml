@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/space_10" android:paddingRight="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <RelativeLayout android:id="@id/avatar_container" android:paddingTop="@dimen/space_10" android:paddingBottom="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.greentechplace.lvkebangapp.ui.AvatarView android:id="@id/iv_avatar" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="@dimen/space_10" android:src="@drawable/group_icon" android:layout_alignParentTop="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/relativeLayout" android:paddingTop="@dimen/space_10" android:paddingBottom="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar_container">
+            <TextView android:textSize="@dimen/smaller_text_size" android:textColor="@color/list_content_gray" android:id="@id/tv_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_black_6" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_5" android:singleLine="false" android:layout_below="@id/tv_source" />
+        </RelativeLayout>
+        <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </RelativeLayout>
+</RelativeLayout>

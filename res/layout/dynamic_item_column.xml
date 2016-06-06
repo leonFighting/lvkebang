@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_user_info" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/middle" android:background="@drawable/dyname_item_back" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="@dimen/space_10" android:layout_marginRight="@dimen/space_10" android:baselineAligned="false">
+        <RelativeLayout android:id="@id/content_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/black" android:id="@id/title" android:padding="@dimen/space_5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/divider" android:background="@color/green" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginLeft="@dimen/space_5" android:layout_marginRight="@dimen/space_5" android:layout_below="@id/title" />
+            <TextView android:textColor="@color/alert_chat_divider_color" android:ellipsize="end" android:id="@id/content" android:padding="@dimen/space_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:layout_below="@id/divider" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/cover_container" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_10" android:layout_marginRight="@dimen/space_10" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/cover" android:focusable="false" android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/default_avatar" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:contentDescription="@string/space" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/view_comment_and_like" />
+</LinearLayout>

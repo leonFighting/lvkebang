@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/list_group_notice_item_layout" android:background="@drawable/mm_listitem" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_10" android:paddingRight="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingTop="@dimen/space_11" android:paddingBottom="@dimen/space_11" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                <ImageView android:id="@id/avatar" android:layout_width="@dimen/size_avatar" android:layout_height="@dimen/size_avatar" android:src="@drawable/default_avatar" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/text_container" android:paddingLeft="@dimen/space_10" android:paddingRight="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/user_state" android:layout_toRightOf="@id/avatar_container" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/main_black" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_gray" android:id="@id/message" android:paddingTop="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/name" />
+            </RelativeLayout>
+            <Button android:textSize="12.0sp" android:id="@id/user_state" android:background="@drawable/btn_green_circle_selector" android:layout_width="@dimen/space_52" android:layout_height="@dimen/space_30" android:text="@string/agree_group" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/space_1" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/ta_home_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_gravity="bottom" android:background="@drawable/primarybar_background" android:layout_width="fill_parent" android:layout_height="@dimen/space_52">
+            <android.support.v4.app.FragmentTabHost android:id="@id/ta_home_host" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+            </android.support.v4.app.FragmentTabHost>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

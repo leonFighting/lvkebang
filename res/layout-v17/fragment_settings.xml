@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+            <LinearLayout android:id="@id/ly_modify_personal_information" android:visibility="visible" style="@style/select_item_container">
+                <TextView android:layout_height="52.0dip" android:text="修改个人资料" style="@style/select_item_text" />
+                <ImageView android:background="@drawable/list_icon_arrow" android:layout_width="9.0dip" android:layout_height="18.0dip" />
+            </LinearLayout>
+            <View style="@style/set_list_divider" />
+            <LinearLayout android:id="@id/ly_settings_message" android:visibility="visible" style="@style/select_item_container">
+                <TextView android:layout_height="52.0dip" android:text="@string/settings_message" style="@style/select_item_text" />
+                <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_gray" android:id="@id/tv_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <ImageView android:background="@drawable/list_icon_arrow" android:layout_width="9.0dip" android:layout_height="18.0dip" />
+            </LinearLayout>
+            <View style="@style/select_list_divider" />
+            <LinearLayout android:id="@id/ly_settings_load_image" android:visibility="gone" style="@style/select_item_container">
+                <TextView android:text="@string/settings_load_image" style="@style/select_item_text" />
+                <com.greentechplace.lvkebangapp.ui.tooglebutton.ToggleButton android:id="@id/tb_load_picture" android:layout_width="65.0dip" android:layout_height="30.0dip" toggle:borderWidth="0.100000024dip" toggle:onColor="@color/main_green"
+                  xmlns:toggle="http://schemas.android.com/apk/res/com.greentechplace.lvkebangapp" />
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/ly_settings_cache" android:background="@drawable/list_item_background" android:paddingLeft="@dimen/space_20" android:paddingRight="@dimen/space_20" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/space_49">
+                <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/imageView8" android:background="@drawable/list_icon_arrow" android:layout_width="9.0dip" android:layout_height="18.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <RelativeLayout android:id="@id/relativeLayout4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+                    <RelativeLayout android:id="@id/relativeLayout5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+                        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_gray" android:layout_gravity="top" android:id="@id/tv_cache_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_black" android:layout_gravity="bottom" android:id="@id/textView17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="清理缓存" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <View style="@style/set_list_divider" />
+            <LinearLayout android:id="@id/ly_settings_change_pwd" style="@style/select_item_container">
+                <TextView android:text="@string/settings_change_pwd" style="@style/select_item_text" />
+                <ImageView android:background="@drawable/list_icon_arrow" android:layout_width="9.0dip" android:layout_height="18.0dip" />
+            </LinearLayout>
+            <View style="@style/set_list_divider" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/ly_settings_cache" android:background="@drawable/list_item_background" android:paddingLeft="@dimen/space_20" android:paddingRight="@dimen/space_20" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/space_49">
+                <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/imageView8" android:background="@drawable/list_icon_arrow" android:layout_width="9.0dip" android:layout_height="18.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <RelativeLayout android:id="@id/relativeLayout4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+                    <RelativeLayout android:id="@id/ly_settings_update" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+                        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_gray" android:layout_gravity="top" android:id="@id/tv_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_black" android:layout_gravity="bottom" android:id="@id/tv_version_name_pelase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="检查更新" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+            <LinearLayout android:id="@id/ly_settings_feedback" style="@style/select_item_container">
+                <TextView android:text="@string/settings_feedback" style="@style/select_item_text" />
+                <ImageView android:background="@drawable/list_icon_arrow" android:layout_width="9.0dip" android:layout_height="18.0dip" />
+            </LinearLayout>
+            <View style="@style/set_list_divider" />
+            <LinearLayout android:id="@id/ly_settings_about" style="@style/select_item_container">
+                <TextView android:text="@string/settings_about" style="@style/select_item_text" />
+                <ImageView android:background="@drawable/list_icon_arrow" android:layout_width="9.0dip" android:layout_height="18.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ly_open_market" android:visibility="gone" style="@style/select_item_container">
+                <TextView android:text="@string/settings_grade" style="@style/select_item_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textColor="@color/setting_back" android:id="@id/btn_logout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="@dimen/select_item_container_margin_bottom" android:text="@string/logout_account" style="@style/button_common_red" />
+    </LinearLayout>
+</ScrollView>

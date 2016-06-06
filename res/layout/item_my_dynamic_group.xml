@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/green" android:id="@id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:text="群组" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_gray" android:id="@id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="I" android:layout_toRightOf="@id/textView12" android:layout_alignTop="@id/textView12" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="刚刚" android:layout_toRightOf="@id/textView13" android:layout_alignTop="@id/textView13" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="80.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/main_black" android:id="@id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="长得漂亮和帅的都进来了" android:layout_alignLeft="@id/textView16" android:layout_alignTop="@id/my_main_touxiang" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_gray" android:ellipsize="end" android:id="@id/textView16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="群标签 群标签 群标签" android:layout_toRightOf="@id/my_main_touxiang" android:layout_below="@id/textView15" />
+            <com.greentechplace.lvkebangapp.ui.widget.CircleImageView android:id="@id/my_main_touxiang" android:background="@color/text_light" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" app:border_width="2.0dip" app:border_color="@color/ui_dialog_list_text" />
+            <ImageView android:background="@drawable/btn_join_nor" android:layout_width="50.0dip" android:layout_height="24.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

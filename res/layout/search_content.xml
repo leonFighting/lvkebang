@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/black" android:ellipsize="end" android:id="@id/search_content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" />
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/gray" android:ellipsize="end" android:id="@id/search_content_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lines="2" android:layout_below="@id/search_content_title" />
+        <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" android:layout_below="@id/search_content_content" />
+    </RelativeLayout>
+</LinearLayout>

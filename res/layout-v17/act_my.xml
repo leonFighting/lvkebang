@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@id/re_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@id/my_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="24.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="28.0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.greentechplace.lvkebangapp.ui.widget.CircleImageView
+                    android:id="@id/my_main_touxiang"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    app:border_color="@color/white"
+                    app:border_width="1.0px" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@id/my_main_touxiang"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@id/re_focus_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_weight="1.0">
+
+                        <TextView
+                            android:id="@id/my_focus_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5.0sp"
+                            android:textColor="@color/main_black"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@id/me_foucs_people"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5.0dip"
+                            android:text="关注的人"
+                            android:textColor="@color/main_black_6"
+                            android:textSize="11.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/re_my_Fans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_toRightOf="@id/re_focus_people"
+                        android:layout_weight="1.0">
+
+                        <TextView
+                            android:id="@id/my_fans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5.0dip"
+                            android:textColor="@color/main_black"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@id/people_focus_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5.0dip"
+                            android:text="粉丝"
+                            android:textColor="@color/main_black_6"
+                            android:textSize="11.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/re_focus_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_toRightOf="@id/re_my_Fans"
+                        android:layout_weight="1.0">
+
+                        <TextView
+                            android:id="@id/my_focus_msg_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5.0dip"
+                            android:textColor="@color/main_black"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5.0dip"
+                            android:text="关注的内容"
+                            android:textColor="@color/main_black_6"
+                            android:textSize="11.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/re_my_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/my_head"
+            android:layout_marginBottom="25.0dip"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@id/my_desc_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24.0dip"
+                android:layout_marginRight="24.0dip"
+                android:textColor="@color/main_black"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_my_desc">
+
+            <ImageView
+                android:id="@id/my_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/my_icon_arrow_down"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/tab_my"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/my_navigation"
+        android:layout_below="@id/re_head" />
+
+    <LinearLayout
+        android:id="@id/my_navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|center"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@id/chat"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@id/sixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="私信"
+                android:textColor="@color/input_hint_gray"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/add_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/foot_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:id="@id/re_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6.0dip"
+                    android:text="+"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    android:id="@id/attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/add"
+                    android:text="关注"
+                    android:textColor="@color/orange"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.greentechplace.lvkebangapp.ui.Clipimage.ClipImageLayout android:id="@id/clipImageLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/okBtn" android:layout_width="@dimen/space_0" android:layout_height="@dimen/space_40" android:layout_marginLeft="@dimen/space_10" android:layout_marginRight="@dimen/space_10" android:text="确定" android:layout_weight="1.0" style="@style/button_common_green_small" />
+        <Button android:id="@id/cancleBtn" android:layout_width="@dimen/space_0" android:layout_height="@dimen/space_40" android:layout_marginLeft="@dimen/space_10" android:layout_marginRight="@dimen/space_10" android:text="取消" android:layout_weight="1.0" style="@style/button_common_green_small" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/gray_link_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dynamic_item_complete_user_info" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/middle" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/black" android:id="@id/userName" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/alert_chat_divider_color" android:gravity="bottom" android:id="@id/userDesc" android:paddingLeft="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar" android:layout_below="@id/userName" android:layout_alignBottom="@id/avatar" />
+        <Button android:id="@id/btn_complete" android:background="@drawable/btn_perfect_selector" android:layout_width="50.0dip" android:layout_height="25.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/below" android:layout_width="fill_parent" android:layout_height="12.0dip">
+        <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <View android:background="@color/main_normal_gray_bac" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,81 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="59dp"
-     android:id="@+id/list_item_layout"
-    android:gravity="center_vertical" >
-
-    <RelativeLayout
-        android:id="@+id/avatar_container"
-        android:layout_width="59dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true" >
-
-      <ImageView
-            android:id="@+id/avatar"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/default_avatar" />
-
-        <TextView
-            android:id="@+id/unread_msg_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="2dp"
-            android:layout_marginTop="3dp"
-            android:background="@drawable/unread_count_bg"
-            android:gravity="center"
-            android:text="7"
-            android:textColor="@android:color/white"
-            android:textSize="12sp" />
+<RelativeLayout android:gravity="center_vertical" android:id="@id/list_item_layout" android:background="@drawable/mm_listitem" android:paddingLeft="@dimen/space_10" android:paddingTop="@dimen/space_11" android:paddingRight="@dimen/space_10" android:paddingBottom="@dimen/space_11" android:layout_width="fill_parent" android:layout_height="@dimen/space_89"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/avatar_container" android:layout_width="@dimen/space_80" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/avatar" android:layout_width="@dimen/space_68" android:layout_height="@dimen/space_68" android:src="@drawable/default_avatar" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/unread_msg_number" android:background="@drawable/unread_count_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true" />
     </RelativeLayout>
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="6dp"
-        android:layout_toRightOf="@id/avatar_container"
-        android:textColor="#000"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="7dp"
-        android:layout_marginTop="6dp"
-        android:textColor="#888888"
-        android:textSize="13sp" />
-
-    <ImageView
-        android:id="@+id/msg_state"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="7dp"
-        android:layout_toRightOf="@id/avatar_container"
-        android:src="@drawable/msg_state_fail_resend"
-        android:visibility="gone" />
-
-    <TextView
-        android:id="@+id/message"
-        android:layout_toLeftOf="@id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@id/msg_state"
-        android:singleLine="true"
-        android:ellipsize="end"
-        android:padding="7dp"
-        android:textColor="#888888"
-        android:textSize="14sp" />
-
+    <RelativeLayout android:orientation="horizontal" android:id="@id/text_container" android:paddingRight="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/time" android:layout_toRightOf="@id/avatar_container" android:layout_centerVertical="true">
+        <ImageView android:id="@id/msg_state" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginBottom="@dimen/space_7" android:src="@drawable/msg_state_fail_resend" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/big_text_size" android:textColor="@color/main_black" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="#ff888888" android:ellipsize="end" android:id="@id/message" android:paddingRight="@dimen/space_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/msg_state" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/small_text_size" android:textColor="#ff888888" android:id="@id/time" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/text_container" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="false" />
+    <ImageView android:id="@id/group_double" android:background="@drawable/group_double" android:visibility="gone" android:layout_width="@dimen/space_23" android:layout_height="@dimen/space_20" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
 </RelativeLayout>

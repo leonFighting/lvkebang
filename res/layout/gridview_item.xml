@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="122.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.greentechplace.lvkebangapp.ui.widget.CircleImageView android:id="@id/register_friends_gridview_iv" android:background="@drawable/default_avatar" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_centerHorizontal="true" app:border_width="2.0dip" app:border_color="@color/ui_dialog_list_text" />
+    <ImageView android:id="@id/rgistration_guide_ok" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/rgistration_guide_ok" android:layout_alignRight="@id/register_friends_gridview_iv" android:layout_alignBottom="@id/register_friends_gridview_iv" />
+    <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/register_friends_gridview_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/register_friends_gridview_iv" android:layout_centerHorizontal="true" />
+</RelativeLayout>

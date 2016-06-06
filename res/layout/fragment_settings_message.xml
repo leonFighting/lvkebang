@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+            <LinearLayout android:id="@id/ly_settings_notice" style="@style/select_item_container">
+                <TextView android:text="@string/newnotify" style="@style/select_item_text" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/newnotify" android:background="@android:color/transparent" android:layout_width="65.0dip" android:layout_height="30.0dip" android:checked="false" android:button="@drawable/toggle_btn" android:textOn="" android:textOff="" />
+            </LinearLayout>
+            <View android:id="@id/select_list_divider_notice" style="@style/select_list_divider" />
+            <LinearLayout android:id="@id/ly_settings_notice_voice" style="@style/select_item_container">
+                <TextView android:text="@string/voice" style="@style/select_item_text" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/voice" android:background="@android:color/transparent" android:layout_width="65.0dip" android:layout_height="30.0dip" android:checked="false" android:button="@drawable/toggle_btn" android:textOn="" android:textOff="" />
+            </LinearLayout>
+            <View android:id="@id/select_list_divider_voice" style="@style/select_list_divider" />
+            <LinearLayout android:id="@id/ly_settings_notice_shake" style="@style/select_item_container">
+                <TextView android:text="@string/shake" style="@style/select_item_text" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/shake" android:background="@android:color/transparent" android:layout_width="65.0dip" android:layout_height="30.0dip" android:checked="false" android:button="@drawable/toggle_btn" android:textOn="" android:textOff="" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+            <LinearLayout android:id="@id/ly_settings_private" android:visibility="visible" style="@style/select_item_container">
+                <TextView android:text="@string/settings_private" style="@style/select_item_text" />
+                <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/main_gray" android:id="@id/tv_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

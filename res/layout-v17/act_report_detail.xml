@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@id/rl_select"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:layout_marginTop="14.0dip"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:layout_weight="1.0">
+
+                <RadioGroup
+                    android:id="@id/group_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    android:padding="10.0dip">
+
+                    <RadioButton
+                        android:id="@id/cb_ljyx"
+                        android:layout_width="17.0dip"
+                        android:layout_height="17.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="4.0dip"
+                        android:background="@drawable/selector_radio_group"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@id/cb_wfxx"
+                        android:layout_width="17.0dip"
+                        android:layout_height="17.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="27.0dip"
+                        android:background="@drawable/selector_radio_group"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@id/cb_rsgj"
+                        android:layout_width="17.0dip"
+                        android:layout_height="17.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="27.0dip"
+                        android:background="@drawable/selector_radio_group"
+                        android:button="@null" />
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150.0dip"
+                    android:layout_toRightOf="@id/group_left">
+
+                    <TextView
+                        android:id="@id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="13.0dip"
+                        android:text="垃圾营销"
+                        android:textColor="@color/main_black"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:id="@id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/textView2"
+                        android:layout_alignStart="@id/textView2"
+                        android:layout_below="@id/textView2"
+                        android:layout_marginTop="26.0dip"
+                        android:text="违法信息"
+                        android:textColor="@color/main_black"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:id="@id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/textView8"
+                        android:layout_alignStart="@id/textView8"
+                        android:layout_below="@id/textView8"
+                        android:layout_marginTop="26.0dip"
+                        android:text="人身攻击"
+                        android:textColor="@color/main_black"
+                        android:textSize="14.0dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@id/group_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    android:padding="10.0dip">
+
+                    <RadioButton
+                        android:id="@id/cb_bsxx"
+                        android:layout_width="17.0dip"
+                        android:layout_height="17.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="4.0dip"
+                        android:background="@drawable/selector_radio_group"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@id/cb_yhxx"
+                        android:layout_width="17.0dip"
+                        android:layout_height="17.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="27.0dip"
+                        android:background="@drawable/selector_radio_group"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@id/cb_nrcx"
+                        android:layout_width="17.0dip"
+                        android:layout_height="17.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="27.0dip"
+                        android:background="@drawable/selector_radio_group"
+                        android:button="@null" />
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150.0dip"
+                    android:layout_toRightOf="@id/group_right">
+
+                    <TextView
+                        android:id="@id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="13.0dip"
+                        android:text="不实信息"
+                        android:textColor="@color/main_black"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:id="@id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/textView10"
+                        android:layout_alignStart="@id/textView10"
+                        android:layout_below="@id/textView9"
+                        android:layout_marginTop="26.0dip"
+                        android:text="有害信息"
+                        android:textColor="@color/main_black"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:id="@id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/textView9"
+                        android:layout_alignStart="@id/textView9"
+                        android:layout_below="@id/textView11"
+                        android:layout_marginTop="26.0dip"
+                        android:text="内容抄袭"
+                        android:textColor="@color/main_black"
+                        android:textSize="14.0dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/rl_select"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip">
+
+            <RelativeLayout
+                android:id="@id/rl_report_ed"
+                android:layout_width="fill_parent"
+                android:layout_height="120.0dip"
+                android:background="@drawable/et_report_bg"
+                android:paddingBottom="15.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="15.0dip">
+
+                <EditText
+                    android:id="@id/ed_report_other_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="其他理由"
+                    android:textColor="@color/main_black"
+                    android:textColorHint="@color/input_hint_gray"
+                    android:textSize="14.0dip" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@id/submit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/rl_report_ed"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/selector_btn_green"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="16.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

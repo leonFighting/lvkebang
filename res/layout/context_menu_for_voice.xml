@@ -1,34 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    android:gravity="center_horizontal"
-    android:orientation="vertical" >
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="@android:color/darker_gray" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/context_menu_item_bg"
-        android:clickable="true"
-        android:gravity="center_vertical"
-        android:onClick="delete"
-        android:padding="10dp"
-        android:text="@string/delete_voice"
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="@android:color/darker_gray" />
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20" android:layout_marginRight="@dimen/space_20"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/normal_text_size" android:textColor="@android:color/black" android:gravity="center_vertical" android:background="@drawable/context_menu_item_bg" android:padding="@dimen/space_10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_voice" android:onClick="delete" />
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
 </LinearLayout>

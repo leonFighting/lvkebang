@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <net.oschina.app.v2.ui.tab.SlidingTabLayout android:id="@id/sliding_tabs" android:background="@color/actionbar_background" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/main_tab_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sliding_tabs" />
+</RelativeLayout>

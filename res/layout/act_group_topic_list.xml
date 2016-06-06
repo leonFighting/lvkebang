@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_actionbar" />
+    <RelativeLayout android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.greentechplace.lvkebangapp.ui.widget.CircleImageView android:id="@id/civ_group_avatar" android:background="@drawable/rgistration_guide_touxiang" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_centerVertical="true" app:border_width="2.0dip" app:border_color="@color/ui_dialog_list_text" />
+        <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/main_black" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxEms="8" android:singleLine="true" android:layout_toRightOf="@id/civ_group_avatar" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/iv_group_info" android:background="@drawable/btn_group_border" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="查看" android:layout_toLeftOf="@id/iv_group_chat" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/iv_group_chat" android:background="@drawable/btn_group_border" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="群聊" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fl_fragment_holder" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" />
+</LinearLayout>

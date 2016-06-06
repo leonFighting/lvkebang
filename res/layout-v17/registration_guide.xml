@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_actionbar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/registration_guide_ImageBlur_bg" android:layout_width="fill_parent" android:layout_height="106.0dip">
+                <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                    <RelativeLayout android:id="@id/re_registration_guide_touxiang" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerHorizontal="true">
+                        <com.greentechplace.lvkebangapp.ui.widget.CircleImageView android:id="@id/registration_guide_touxiang" android:background="@drawable/rgistration_guide_touxiang_my" android:layout_width="80.0dip" android:layout_height="80.0dip" app:border_width="1.0px" app:border_color="@color/white" />
+                        <ImageView android:background="@drawable/select_portrait" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <RelativeLayout android:id="@id/rgistration_guide_sex22" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/input_hint_gray" android:id="@id/textView182" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="昵称" android:layout_centerVertical="true" />
+                    <EditText android:textSize="15.0sp" android:textColor="@color/main_black" android:textColorHint="@color/input_hint_gray" android:id="@id/registration_guide_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="1.0dip" android:hint="请输入昵称" android:singleLine="true" android:maxLength="16" android:layout_toRightOf="@id/textView182" android:layout_centerVertical="true" android:imeOptions="actionDone" />
+                </RelativeLayout>
+                <ImageView android:background="@color/edittext_diver_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:id="@id/rgistration_guide_sex" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/input_hint_gray" android:id="@id/textView18" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="性别" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/input_hint_gray" android:id="@id/tx_rgistration_guide_sex_tx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="请点击选择性别" android:layout_toRightOf="@id/textView18" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/edittext_diver_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:id="@id/guide_radio_industry" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/input_hint_gray" android:id="@id/textView19" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="擅长领域" android:layout_centerVertical="true" />
+                    <EditText android:enabled="false" android:textSize="15.0sp" android:textColor="@color/main_black" android:textColorHint="@color/input_hint_gray" android:id="@id/guide_radio_industry_tv" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="1.0dip" android:hint="例如:多肉种植" android:singleLine="true" android:layout_toRightOf="@id/textView19" android:layout_centerVertical="true" android:imeOptions="actionDone" />
+                </RelativeLayout>
+                <View android:background="@color/edittext_diver_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:id="@id/registration_guide_residence" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/input_hint_gray" android:id="@id/textView20" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="所在区域" android:layout_centerVertical="true" />
+                    <EditText android:textSize="15.0sp" android:textColor="@color/main_black" android:textColorHint="@color/input_hint_gray" android:id="@id/guide_radio_residence_tv" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="1.0dip" android:hint="请点击选择所在区域" android:singleLine="true" android:layout_toRightOf="@id/textView20" android:layout_centerVertical="true" android:imeOptions="actionDone" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/main_black" android:id="@id/tx_guide_radio_residence_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="请点击选择所在区域" android:layout_toRightOf="@id/textView20" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/edittext_diver_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:id="@id/registration_guide_education" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/input_hint_gray" android:id="@id/textView21" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="职业身份" android:layout_centerVertical="true" />
+                    <EditText android:enabled="false" android:textSize="15.0sp" android:textColor="@color/main_black" android:textColorHint="@color/input_hint_gray" android:id="@id/guide_radio_education_tv" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="1.0dip" android:hint="例如:种植大户" android:singleLine="true" android:layout_toRightOf="@id/textView21" android:layout_centerVertical="true" android:imeOptions="actionDone" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/registration_guide_introduction" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="109.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/input_hint_gray" android:id="@id/textView22" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="个人简介" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+                    <EditText android:textSize="15.0sp" android:textColor="@color/main_black" android:textColorHint="@color/input_hint_gray" android:id="@id/tv_desc" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:minWidth="1.0dip" android:hint="请输入个人简介" android:singleLine="false" android:maxLength="200" android:layout_toRightOf="@id/textView22" android:imeOptions="actionDone" android:layout_toEndOf="@id/textView22" />
+                    <TextView android:id="@id/tv_desc_real" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_desc" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/re_desc_length" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/input_hint_gray" android:id="@id/my_desc_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <View android:background="@color/edittext_diver_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

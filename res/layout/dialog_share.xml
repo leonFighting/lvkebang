@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/share_corner_bg" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/share_chat" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_btn_buddy" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/share_group" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_btn_group" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/share_we_chat" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_btn_wechat_nor" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/share_circle" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_btn_circleoffriends" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/share_weibo" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_btn_weibo" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/share_zone" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_btn_qqspace" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/share_qq" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_btn_qq" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/share_copy" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_btn_copylink" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/share_other" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_btn_other" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_actionbar" />
+
+    <RelativeLayout
+        android:id="@id/find_Search_re"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_50"
+        android:background="@drawable/activity_find_seach_edt_background"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10">
+
+        <EditText
+            android:id="@id/find_Search_edt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_15"
+            android:layout_toLeftOf="@id/search_SearchButton"
+            android:layout_toStartOf="@id/search_SearchButton"
+            android:background="@null"
+            android:hint="@string/please_you_have_to_enter_search_groups_or_people"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingLeft="@dimen/space_5"
+            android:paddingRight="@dimen/space_5"
+            android:paddingTop="@dimen/space_5"
+            android:textColor="@color/main_black"
+            android:textColorHint="@color/input_hint_gray"
+            android:textSize="@dimen/small_text_size" />
+
+        <ImageView
+            android:id="@id/search_SearchButton"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/find_search_kind" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@id/find_Search_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+</LinearLayout>

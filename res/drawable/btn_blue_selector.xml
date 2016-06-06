@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/btn_blue_pressed_shape" android:state_pressed="true"/>
-    <item android:drawable="@drawable/btn_blue_pressed_shape" android:state_enabled="false"/>
-    <item android:drawable="@drawable/btn_blue_normal_shape"/>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape>
+            <corners android:radius="5.0dip" />
+            <solid android:color="#ff3894bb" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="5.0dip" />
+            <solid android:color="#ff4682b4" />
+        </shape>
+    </item>
 </selector>

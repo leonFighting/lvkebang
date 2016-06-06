@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/actionBar"
+        layout="@layout/view_actionbar" />
+
+    <LinearLayout
+        android:id="@id/head_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="10.0dip">
+
+        <LinearLayout
+            android:id="@id/head_avator_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@id/head_avatar"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:contentDescription="@string/space" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/head_right_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/head_group_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_black"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@id/head_group_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.0dip"
+                android:layout_marginTop="8.0dip"
+                android:textColor="@color/main_black"
+                android:textSize="13.0sp" />
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/transparent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@color/transparent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@id/label_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:background="@drawable/lable_bg"
+                        android:minWidth="@dimen/space_10"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:text="生物"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@id/label_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:background="@drawable/lable_bg"
+                        android:minWidth="@dimen/space_10"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:text="技术"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@id/label_third"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:background="@drawable/lable_bg"
+                        android:minWidth="@dimen/space_10"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:text="农业种植生物服务"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@id/label_forth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:background="@drawable/lable_bg"
+                        android:minWidth="@dimen/space_10"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:text="食品"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@id/label_fifth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/lable_bg"
+                        android:minWidth="@dimen/space_10"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:text="小组"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/body_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <RelativeLayout
+            android:id="@id/group_topic"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip">
+
+            <TextView
+                android:id="@id/group_topic_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="群话题"
+                android:textColor="@color/main_black"
+                android:textSize="17.0dip" />
+
+            <TextView
+                android:id="@id/group_topic_count"
+                style="@style/orange_text_style"
+                android:layout_alignTop="@id/group_topic_next"
+                android:layout_toLeftOf="@id/group_topic_next"
+                android:layout_toStartOf="@id/group_topic_next" />
+
+            <ImageView
+                android:id="@id/group_topic_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/group_topic_tx"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/list_next" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/primarybar_split_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/rl_group_member"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip">
+
+            <TextView
+                android:id="@id/group_member_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="群成员"
+                android:textColor="@color/main_black"
+                android:textSize="17.0dip" />
+
+            <com.greentechplace.lvkebangapp.ui.widget.CircleImageView
+                android:id="@id/member_first"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_toLeftOf="@id/member_second"
+                android:layout_toStartOf="@id/member_second"
+                android:visibility="gone"
+                app:border_color="@color/ui_dialog_list_text"
+                app:border_width="2.0dip" />
+
+            <com.greentechplace.lvkebangapp.ui.widget.CircleImageView
+                android:id="@id/member_second"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignTop="@id/member_first"
+                android:layout_marginEnd="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_toLeftOf="@id/member_third"
+                android:layout_toStartOf="@id/member_third"
+                android:visibility="gone"
+                app:border_color="@color/ui_dialog_list_text"
+                app:border_width="2.0dip" />
+
+            <com.greentechplace.lvkebangapp.ui.widget.CircleImageView
+                android:id="@id/member_third"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignTop="@id/member_second"
+                android:layout_marginEnd="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_toLeftOf="@id/member_forth"
+                android:layout_toStartOf="@id/member_forth"
+                android:visibility="gone"
+                app:border_color="@color/ui_dialog_list_text"
+                app:border_width="2.0dip" />
+
+            <com.greentechplace.lvkebangapp.ui.widget.CircleImageView
+                android:id="@id/member_forth"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignTop="@id/member_third"
+                android:layout_marginEnd="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_toLeftOf="@id/add_member"
+                android:layout_toStartOf="@id/add_member"
+                android:visibility="gone"
+                app:border_color="@color/ui_dialog_list_text"
+                app:border_width="2.0dip" />
+
+            <ImageView
+                android:id="@id/add_member"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignTop="@id/member_forth"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toLeftOf="@id/group_member_next"
+                android:layout_toStartOf="@id/group_member_next"
+                android:background="@drawable/group_member_add"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@id/group_member_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/group_member_tx"
+                android:layout_centerVertical="true"
+                android:background="@drawable/list_next" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/primarybar_split_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/group_qr_code"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip">
+
+            <TextView
+                android:id="@id/group_of_qr_code_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="群二维码"
+                android:textColor="@color/main_black"
+                android:textSize="17.0dip" />
+
+            <ImageView
+                android:id="@id/group_of_qr_code_img"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:layout_toLeftOf="@id/next_group_of_qr_code"
+                android:layout_toStartOf="@id/next_group_of_qr_code"
+                android:background="@drawable/group_of_qr_code" />
+
+            <ImageView
+                android:id="@id/next_group_of_qr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/group_of_qr_code_tx"
+                android:background="@drawable/list_next" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/primarybar_split_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/group_info"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip">
+
+            <TextView
+                android:id="@id/group_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="群组信息"
+                android:textColor="@color/main_black"
+                android:textSize="17.0dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/group_info_title"
+                android:background="@drawable/list_next" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="群简介"
+                android:textColor="@color/main_black"
+                android:textSize="18.0sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@id/group_of_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_black"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@id/btn_group_action"
+                style="@style/button_common_green"
+                android:layout_marginTop="25.0dip"
+                android:text="进入聊天" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_all" android:layout_width="wrap_content" android:layout_height="?actionBarSize" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/white" android:id="@id/title" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部动态" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/icon_all" android:visibility="visible" android:layout_width="8.0dip" android:layout_height="3.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/square_slider" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="?actionBarSize" android:layout_marginLeft="26.0dip" android:layout_toRightOf="@id/rl_all" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/white" android:id="@id/follow_dynamic" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注的动态" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/icon_follow" android:visibility="visible" android:layout_width="8.0dip" android:layout_height="3.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/square_slider" android:layout_below="@id/follow_dynamic" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/invitation_SMS" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/share_icon_chat_selector" android:scaleType="fitCenter" />
+            <TextView android:paddingTop="5.0dip" android:text="短信" style="@style/dialog_share_icon" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/invitation_QR_code" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/share_icon_qr_selector" android:scaleType="fitCenter" />
+            <TextView android:paddingTop="5.0dip" android:text="二维码" style="@style/dialog_share_icon" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/invitation_wechat" style="@style/dialog_share_row_container">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/share_icon_wechat_selector" android:scaleType="fitCenter" />
+            <TextView android:paddingTop="5.0dip" android:text="@string/share_we_chat" style="@style/dialog_share_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

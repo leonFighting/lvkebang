@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_10" android:src="@drawable/ic_launcher_notice" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <TextView android:textColor="@color/white" android:id="@id/tv_download_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/down_state" android:layout_toRightOf="@id/iv_image" />
+    <ProgressBar android:id="@id/pb_download" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_toRightOf="@id/iv_image" android:layout_below="@id/tv_download_state" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

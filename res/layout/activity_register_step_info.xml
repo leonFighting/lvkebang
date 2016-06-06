@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_10" android:paddingRight="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_marginTop="@dimen/space_9" style="@style/item_input_container">
+                <EditText android:id="@id/et_conteactname" android:background="@drawable/edt_all_background" android:hint="@string/hint_contactname" style="@style/item_input_edittext" />
+                <ImageView android:id="@id/iv_clear_contactname" android:visibility="gone" android:contentDescription="@null" style="@style/item_input_clear" />
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="@dimen/space_9" style="@style/item_input_container">
+                <EditText android:id="@id/et_psd" android:background="@drawable/edt_all_background" android:hint="@string/hint_enter_password" android:inputType="textPassword" style="@style/item_input_edittext" />
+                <ImageView android:id="@id/iv_clear_psd" android:visibility="gone" android:contentDescription="@null" style="@style/item_input_clear" />
+            </LinearLayout>
+            <Button android:id="@id/btn_register_info" android:layout_marginTop="@dimen/space_50" android:layout_marginBottom="10.0dip" android:text="@string/finish_reg" style="@style/button_common_green" />
+            <RelativeLayout android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="40.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/main_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请使用6-16位英文或数字密码" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:layout_gravity="right" android:id="@id/progressBar2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+</LinearLayout>

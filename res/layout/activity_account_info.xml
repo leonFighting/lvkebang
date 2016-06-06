@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+            <LinearLayout android:id="@id/account_info_data" style="@style/select_item_container">
+                <TextView android:text="@string/my_account_data" style="@style/select_item_text" />
+            </LinearLayout>
+            <View style="@style/select_list_divider" />
+            <LinearLayout android:id="@id/account_info_password" style="@style/select_item_container">
+                <TextView android:text="@string/my_account_password" style="@style/select_item_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

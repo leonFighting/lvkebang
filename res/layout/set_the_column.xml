@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_actionbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bg" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/h154">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.greentechplace.lvkebangapp.ui.widget.CircleImageView android:id="@id/registration_guide_touxiang" android:background="@drawable/rgistration_guide_touxiang" android:layout_width="@dimen/h66" android:layout_height="@dimen/h66" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:border_width="2.0dip" app:border_color="@color/ui_dialog_list_text" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/space_10" android:paddingRight="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/space_60">
+            <RelativeLayout android:id="@id/re4" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="20.0dip" android:textColor="@color/common_link_text_color" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专栏名称" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/re4">
+                <EditText android:textSize="12.0sp" android:textColor="@color/gray_link_text_color" android:textColorHint="@color/input_hint_gray" android:id="@id/feature_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="请设置专栏名称" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:background="@color/text_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/space_10" android:paddingRight="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/space_60">
+            <RelativeLayout android:id="@id/re5" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="20.0dip" android:textColor="@color/common_link_text_color" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专栏简介" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip">
+            <EditText android:textSize="12.0sp" android:textColor="@color/gray_link_text_color" android:textColorHint="@color/input_hint_gray" android:id="@id/feature_desc" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="请设置专栏简介" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

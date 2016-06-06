@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.greentechplace.lvkebangapp.ui.control.richeditor.DeletableEditText android:textColor="#ff444444" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="true" android:lineSpacingExtra="10.0dip" android:textCursorDrawable="@drawable/cursor_shape"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

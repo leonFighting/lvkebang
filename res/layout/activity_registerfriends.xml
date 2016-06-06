@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <GridView android:gravity="center" android:layout_gravity="center" android:id="@id/register_friends_gridview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:columnWidth="@dimen/w97" android:numColumns="3" />
+    <Button android:id="@id/guide_friends_follow" android:layout_margin="10.0dip" android:text="关注" style="@style/button_common_green" />
+</LinearLayout>

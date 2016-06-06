@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/pop_layout" android:background="@drawable/chat_popup_window_bac" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginTop="@dimen/space_5" android:layout_marginRight="@dimen/space_15" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/create_topics" android:paddingLeft="@dimen/space_10" android:paddingRight="@dimen/space_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/space_48" android:layout_marginTop="@dimen/space_10">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/space_20" android:layout_height="@dimen/space_20" android:layout_marginRight="@dimen/space_10" android:src="@drawable/popup_group_chat_create_topics" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:id="@id/create_topic_text" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:background="@drawable/list_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/space_15" android:layout_marginRight="@dimen/space_15" android:alpha="0.5" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/create_qas" android:paddingLeft="@dimen/space_10" android:paddingRight="@dimen/space_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/space_48">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/space_20" android:layout_height="@dimen/space_20" android:layout_marginRight="@dimen/space_10" android:src="@drawable/popup_group_chat_create_wenda" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:id="@id/create_wenda_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_10" />
+        </LinearLayout>
+        <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/space_15" android:layout_marginRight="@dimen/space_15" android:alpha="0.5" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/show_huati" android:paddingLeft="@dimen/space_15" android:paddingRight="@dimen/space_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/space_48" android:layout_marginTop="@dimen/space_10" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/space_20" android:layout_height="@dimen/space_20" android:layout_marginRight="@dimen/space_10" android:src="@drawable/popup_group_chat_show_topics" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/show_huati_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_10" />
+        </LinearLayout>
+        <View android:background="@color/dividing_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/space_15" android:layout_marginRight="@dimen/space_15" android:alpha="0.5" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/show_wenda" android:paddingLeft="@dimen/space_15" android:paddingRight="@dimen/space_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/space_48" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/space_20" android:layout_height="@dimen/space_20" android:layout_marginRight="@dimen/space_10" android:src="@drawable/popup_group_chat_show_wenda" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:id="@id/show_wenda_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_10" />
+        </LinearLayout>
+        <View android:background="@color/dividing_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/space_15" android:layout_marginRight="@dimen/space_15" android:alpha="0.5" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/show_group" android:paddingLeft="@dimen/space_15" android:paddingRight="@dimen/space_15" android:layout_width="wrap_content" android:layout_height="@dimen/space_48" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_group_icon" android:layout_width="@dimen/space_20" android:layout_height="@dimen/space_20" android:layout_marginRight="@dimen/space_10" android:src="@drawable/popup_group_chat_show_info" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:id="@id/show_group_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_10" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

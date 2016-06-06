@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ly_bottom" style="@style/select_industry_list_item_container">
+        <TextView android:id="@id/tv_industry_name" android:text="" style="@style/select_industry_item_text" />
+        <ImageView style="@style/ic_item_goto_right_tip" />
+    </LinearLayout>
+    <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/space_9" android:layout_marginRight="@dimen/space_9" android:layout_below="@id/ly_bottom" />
+</RelativeLayout>

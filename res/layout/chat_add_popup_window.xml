@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pop_layout" android:background="@drawable/chat_popup_window_bac" android:layout_width="wrap_content" android:layout_height="120.0dip" android:layout_marginTop="@dimen/space_5" android:layout_marginRight="@dimen/space_15" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/ll_go_chat" android:paddingLeft="@dimen/space_15" android:paddingRight="@dimen/space_15" android:layout_width="wrap_content" android:layout_height="@dimen/space_48" android:layout_marginTop="@dimen/space_10" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/space_20" android:layout_height="@dimen/space_20" android:layout_marginRight="@dimen/space_10" android:src="@drawable/chat_add_pop_ov1" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_10" android:text="@string/popup_group_add_chat" />
+        </LinearLayout>
+        <View android:background="@color/dividing_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/space_15" android:layout_marginRight="@dimen/space_15" android:alpha="0.5" />
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/ll_creat_group" android:paddingLeft="@dimen/space_15" android:paddingRight="@dimen/space_15" android:layout_width="wrap_content" android:layout_height="@dimen/space_48" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/space_20" android:layout_height="@dimen/space_20" android:layout_marginRight="@dimen/space_10" android:src="@drawable/chat_add_pop_ov2" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_10" android:text="@string/popup_group_add" />
+        </LinearLayout>
+        <View android:background="@color/dividing_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/space_15" android:layout_marginRight="@dimen/space_15" android:alpha="0.5" />
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/ll_search" android:paddingLeft="@dimen/space_15" android:paddingRight="@dimen/space_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/space_48" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/space_20" android:layout_height="@dimen/space_20" android:layout_marginRight="@dimen/space_10" android:src="@drawable/chat_add_pop_ov3" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_10" android:text="@string/popup_search_add" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

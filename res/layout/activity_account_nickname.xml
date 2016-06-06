@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <ScrollView android:background="@color/white" android:padding="@dimen/space_10" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/et_nick_name" android:maxLength="28" style="@style/et_null_border" />
+                <View android:background="@color/text_green_divider" android:layout_below="@id/et_nick_name" style="@style/select_list_divider_nor" />
+                <TextView android:layout_marginTop="@dimen/select_item_container_margin_top" android:text="@string/lable_nickname" style="@style/text_lable" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

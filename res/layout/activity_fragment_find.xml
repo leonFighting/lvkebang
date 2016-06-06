@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@color/main_normal_gray_bac" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/activity_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="120.0dip">
+                <com.daimajia.slider.library.SliderLayout android:id="@id/activity_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+                <LinearLayout android:id="@id/find_fragment_people" style="@style/select_item_container">
+                    <ImageView android:background="@drawable/find_people_background" android:scaleType="center" style="@style/find_select_item_img" />
+                    <TextView android:layout_marginLeft="10.0dip" android:text="@string/find_fragment_people" style="@style/select_item_text" />
+                </LinearLayout>
+                <View style="@style/select_list_divider" />
+                <LinearLayout android:id="@id/find_fragment_group" style="@style/select_item_container">
+                    <ImageView android:background="@drawable/find_group_background" android:scaleType="center" style="@style/find_select_item_img" />
+                    <TextView android:layout_marginLeft="@dimen/space_10" android:text="@string/find_fragment_group" style="@style/select_item_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+                <LinearLayout android:id="@id/find_fragment_huati" style="@style/select_item_container">
+                    <ImageView android:background="@drawable/find_topic_background" android:scaleType="center" style="@style/find_select_item_img" />
+                    <TextView android:layout_marginLeft="@dimen/space_10" android:text="@string/find_fragment_huati" style="@style/select_item_text" />
+                </LinearLayout>
+                <View style="@style/select_list_divider" />
+                <LinearLayout android:id="@id/find_fragment_wenda" style="@style/select_item_container">
+                    <ImageView android:background="@drawable/find_qa_background" android:scaleType="center" style="@style/find_select_item_img" />
+                    <TextView android:layout_marginLeft="@dimen/space_10" android:text="@string/find_fragment_wenda" style="@style/select_item_text" />
+                </LinearLayout>
+                <View style="@style/select_list_divider" />
+                <LinearLayout android:id="@id/find_fragment_jianjie" style="@style/select_item_container">
+                    <ImageView android:background="@drawable/find_view_background" android:scaleType="center" style="@style/find_select_item_img" />
+                    <TextView android:layout_marginLeft="@dimen/space_10" android:text="@string/find_fragment_jianjie" style="@style/select_item_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+                <LinearLayout android:id="@id/find_fragment_friend" style="@style/select_item_container">
+                    <ImageView android:background="@drawable/find_invite_background" android:scaleType="center" style="@style/find_select_item_img" />
+                    <TextView android:layout_marginLeft="@dimen/space_10" android:text="@string/find_fragment_friend" style="@style/select_item_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+                <LinearLayout android:id="@id/my_accout_avatar" android:layout_height="wrap_content" style="@style/select_item_container">
+                    <TextView android:text="头像" style="@style/select_item_text_info" />
+                    <ImageView android:id="@id/ic_default_avatar" android:layout_width="@dimen/list_item_avatar_size" android:layout_height="@dimen/list_item_avatar_size" android:layout_marginTop="@dimen/space_10" android:layout_marginBottom="@dimen/space_10" android:src="@drawable/ic_default_avatar" android:contentDescription="@null" />
+                </LinearLayout>
+                <View style="@style/select_list_divider" />
+                <LinearLayout android:id="@id/my_accout_nickname" android:weightSum="1.0" style="@style/select_item_container">
+                    <TextView android:text="昵称" style="@style/select_item_text_info" />
+                    <TextView android:id="@id/tv_accout_nickname" android:text="" style="@style/select_item_text_right_info" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top" android:layout_marginBottom="@dimen/select_item_container_margin_top">
+                <LinearLayout android:id="@id/my_accout_desc" style="@style/select_item_container">
+                    <TextView android:text="@string/my_accout_desc" style="@style/select_item_text_info" />
+                    <TextView android:id="@id/tv_accout_desc" android:text="" style="@style/select_item_text_right_info" />
+                </LinearLayout>
+                <View style="@style/select_list_divider" />
+                <LinearLayout android:id="@id/my_accout_city" style="@style/select_item_container">
+                    <TextView android:text="@string/my_accout_city" style="@style/select_item_text_info" />
+                    <TextView android:id="@id/tv_accout_city" android:text="" style="@style/select_item_text_right_info" />
+                </LinearLayout>
+                <View style="@style/select_list_divider" />
+                <LinearLayout android:id="@id/my_accout_industry" style="@style/select_item_container">
+                    <TextView android:text="行业" style="@style/select_item_text_info" />
+                    <TextView android:id="@id/tv_accout_industry" android:text="" style="@style/select_item_text_right_info" />
+                </LinearLayout>
+                <View style="@style/select_list_divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

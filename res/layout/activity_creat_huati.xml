@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_actionbar" />
+    <ScrollView android:background="@color/white" android:padding="@dimen/space_10" android:paddingTop="@dimen/space_12" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="false" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="200.0dip">
+                <com.greentechplace.lvkebangapp.ui.wenda.MyEditText android:textColorHint="@color/input_hint_gray" android:gravity="top" android:id="@id/et_desc_dayi" android:background="@drawable/edt_all_background_pro" android:layout_height="200.0dip" android:hint="@string/release_huati" android:maxLength="2500" style="@style/dayi_input_desc" />
+                <RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/space_24" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                    <ImageView android:gravity="center_vertical" android:id="@id/dayi_body_clear" android:background="@drawable/btn_clear_input_normal" android:layout_width="@dimen/space_24" android:layout_height="@dimen/space_24" android:drawableRight="@drawable/btn_clear_input_normal" android:layout_toLeftOf="@id/container_main" android:layout_alignTop="@id/container_main" />
+                    <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/gray_link_text_color" android:id="@id/container_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(" android:layout_toLeftOf="@id/dayi_body_zishuxianzhi" android:layout_alignTop="@id/dayi_body_zishuxianzhi" />
+                    <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/gray_link_text_color" android:id="@id/dayi_body_zishuxianzhi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="886" android:layout_toLeftOf="@id/tv_clear_body" android:layout_alignTop="@id/tv_clear_body" />
+                    <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/gray_link_text_color" android:id="@id/tv_clear_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/50)" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:id="@id/label_container" android:background="@drawable/edt_all_background_pro" android:layout_width="fill_parent" android:layout_height="@dimen/space_64">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#" />
+                <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/my_label" android:layout_width="wrap_content" android:layout_height="@dimen/space_64">
+                    <RadioButton android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/label_first" android:background="@drawable/lable_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="9.0dip" style="@style/radiobutton_dayi" />
+                    <RadioButton android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/label_second" android:background="@drawable/lable_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="9.0dip" style="@style/radiobutton_dayi" />
+                    <RadioButton android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/label_third" android:background="@drawable/lable_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="9.0dip" style="@style/radiobutton_dayi" />
+                    <RadioButton android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/label_fourth" android:background="@drawable/lable_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="9.0dip" style="@style/radiobutton_dayi" />
+                    <RadioButton android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/label_fifth" android:background="@drawable/lable_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="9.0dip" style="@style/radiobutton_dayi" />
+                </RadioGroup>
+                <EditText android:textSize="@dimen/small_text_size" android:textColor="@color/main_black_6" android:textColorHint="@color/input_hint_gray" android:id="@id/ed_label" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/space_64" android:layout_marginBottom="@dimen/space_30" android:hint="@string/dayi_label_hint" android:singleLine="true" android:maxLength="50" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/add_img_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

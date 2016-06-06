@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/main_normal_gray_bac" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/my_fragment_info" android:background="@drawable/list_item_background" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_avatar" android:background="@drawable/ic_default_avatar" android:layout_width="@dimen/avatar_size_big" android:layout_height="@dimen/avatar_size_big" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@null" android:layout_marginStart="15.0dip" android:layout_alignParentStart="true" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/main_black" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:layout_alignLeft="@id/tv_content" android:layout_alignTop="@id/iv_avatar" android:layout_alignStart="@id/tv_content" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/main_gray" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:text="" android:layout_toRightOf="@id/iv_avatar" android:layout_below="@id/tv_name" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/iv_avatar" />
+                <ImageView style="@style/the_arrow" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/my_home_page" android:background="@drawable/list_item_background" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:clickable="true" style="@style/select_item_container_my">
+                    <ImageView android:id="@id/the_home_page_icon" android:background="@drawable/the_home_page_icon" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/find_select_item_img" />
+                    <TextView android:id="@id/textView" android:layout_marginLeft="10.0dip" android:text="@string/my_home_page" android:layout_toRightOf="@id/the_home_page_icon" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/the_home_page_icon" style="@style/select_item_text_myinfo_item" />
+                    <ImageView android:id="@id/imageView9" style="@style/the_arrow" />
+                </RelativeLayout>
+                <View style="@style/select_list_divider" />
+                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/my_fragment_attention" android:background="@drawable/list_item_background" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:clickable="true" style="@style/select_item_container_my">
+                    <ImageView android:id="@id/focus_on_icon" android:background="@drawable/focus_on_icon" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/find_select_item_img" />
+                    <TextView android:layout_marginLeft="10.0dip" android:text="@string/my_fragment_attention" android:layout_toRightOf="@id/focus_on_icon" android:layout_centerVertical="true" android:layout_toEndOf="@id/focus_on_icon" style="@style/select_item_text_myinfo_item" />
+                    <ImageView style="@style/the_arrow" />
+                </RelativeLayout>
+                <View style="@style/select_list_divider" />
+                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/my_fragment_fans" android:background="@drawable/list_item_background" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:clickable="true" style="@style/select_item_container_my">
+                    <ImageView android:id="@id/fans_icon" android:background="@drawable/fans_icon" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/find_select_item_img" />
+                    <TextView android:layout_marginLeft="10.0dip" android:text="@string/my_fragment_fans" android:layout_toRightOf="@id/fans_icon" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/fans_icon" style="@style/select_item_text_myinfo_item" />
+                    <ImageView style="@style/the_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_item_container_margin_top">
+                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/my_fragment_contacts" android:background="@drawable/list_item_background" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:clickable="true" style="@style/select_item_container_my">
+                    <ImageView android:id="@id/the_address_book_icon" android:background="@drawable/the_address_book_icon" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/find_select_item_img" />
+                    <TextView android:layout_marginLeft="10.0dip" android:text="@string/my_fragment_contacts" android:layout_toRightOf="@id/the_address_book_icon" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/the_address_book_icon" style="@style/select_item_text_myinfo_item" />
+                    <ImageView style="@style/the_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/my_fragment_seeting" android:background="@drawable/list_item_background" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:clickable="true" android:layout_marginTop="@dimen/select_item_container_margin_top" style="@style/select_item_container_my">
+                <ImageView android:id="@id/set_up_the_icon" android:background="@drawable/set_up_the_icon" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/find_select_item_img" />
+                <TextView android:layout_marginLeft="10.0dip" android:text="@string/my_fragment_seeting" android:layout_toRightOf="@id/set_up_the_icon" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/set_up_the_icon" style="@style/select_item_text_myinfo_item" />
+                <ImageView style="@style/the_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

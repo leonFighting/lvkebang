@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choose_industry">
+        <item>农业</item>
+        <item>食品</item>
+        <item>生物</item>
+        <item>健康</item>
+        <item>环保</item>
+    </string-array>
+    <string-array name="choose_picture">
+        <item>相册</item>
+        <item>拍照</item>
+    </string-array>
+    <string-array name="choose_private">
+        <item>@string/get_private_all</item>
+        <item>@string/get_private_attention</item>
+    </string-array>
+    <string-array name="dynamic_filter">
+        <item>全部</item>
+        <item>答疑</item>
+        <item>专栏</item>
+        <item>话题</item>
+    </string-array>
+    <integer-array name="font_size_value">
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+    </integer-array>
+    <string-array name="group_menu_publish">
+        <item>发布话题</item>
+        <item>发布技术答疑</item>
+        <item>查看话题</item>
+        <item>查看技术答疑</item>
+        <item>群组信息</item>
+    </string-array>
+    <string-array name="group_notice">
+        <item>删除该聊天</item>
+    </string-array>
+    <string-array name="report">
+        <item>@string/report</item>
+    </string-array>
+    <string-array name="sex">
+        <item>@string/sex_man</item>
+        <item>@string/sex_woman</item>
+    </string-array>
+    <string-array name="six_content">
+        <item>动态</item>
+        <item>专栏</item>
+        <item>群组</item>
+        <item>话题</item>
+        <item>问答</item>
+        <item>收藏</item>
+    </string-array>
+    <string-array name="three_content">
+        <item>专栏</item>
+        <item>话题</item>
+        <item>答疑</item>
+    </string-array>
+</resources>

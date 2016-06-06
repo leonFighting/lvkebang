@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/view_actionbar" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginBottom="1.0dip">
+                <EditText android:textSize="@dimen/text_15_size" android:textColor="@color/dynamic_title" android:textColorHint="@color/dynamic_name" android:gravity="center_vertical" android:id="@id/title" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:hint="请简单输入您遇到的问题" android:maxLength="50" android:layout_centerVertical="true" android:lineSpacingExtra="5.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <EditText android:textSize="@dimen/text_15_size" android:textColor="@color/dynamic_title" android:textColorHint="@color/dynamic_name" android:gravity="top" android:id="@id/content" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:minHeight="80.0dip" android:hint="请详细描述您遇到的问题，方便获得完美解答(选填)" android:maxLength="5000" android:lineSpacingExtra="5.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginBottom="10.0dip">
+                <HorizontalScrollView android:background="@drawable/edt_all_background_pro" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                            <LinearLayout android:id="@id/laber1_lv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/laber1" android:background="@drawable/lable_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:minWidth="@dimen/space_1" android:maxLength="8" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/laber2_lv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/laber2" android:background="@drawable/lable_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:minWidth="@dimen/space_1" android:maxLength="8" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/laber3_lv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/laber3" android:background="@drawable/lable_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:minWidth="@dimen/space_1" android:maxLength="8" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/laber4_lv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/laber4" android:background="@drawable/lable_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:minWidth="@dimen/space_1" android:maxLength="8" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/laber5_lv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/laber5" android:background="@drawable/lable_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/space_1" android:maxLength="8" />
+                            </LinearLayout>
+                            <EditText android:textSize="@dimen/small_text_size" android:textColor="@color/main_black_6" android:textColorHint="@color/input_hint_gray" android:id="@id/type" android:background="@null" android:visibility="visible" android:layout_width="250.0dip" android:layout_height="52.0dip" android:hint="@string/dayi_label_hint" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="113.0dip">
+                <RelativeLayout android:id="@id/rl_image_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="12.0dip" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/image_1" android:background="@drawable/ask_btn_addimage" android:layout_width="75.0dip" android:layout_height="75.0dip" android:scaleType="centerCrop" />
+                    <ImageButton android:id="@id/de_image_1" android:background="@drawable/aska_btn_delete" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_alignRight="@id/image_1" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_image_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/rl_image_1" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/image_2" android:background="@drawable/ask_btn_addimage" android:visibility="gone" android:layout_width="75.0dip" android:layout_height="75.0dip" />
+                    <ImageButton android:id="@id/de_image_2" android:background="@drawable/aska_btn_delete" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_alignRight="@id/image_2" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_image_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/rl_image_2" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/image_3" android:background="@drawable/ask_btn_addimage" android:visibility="gone" android:layout_width="75.0dip" android:layout_height="75.0dip" />
+                    <ImageButton android:id="@id/de_image_3" android:background="@drawable/aska_btn_delete" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_alignRight="@id/image_3" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

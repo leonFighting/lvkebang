@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_actionbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:fillViewport="false"
+        android:padding="@dimen/space_10"
+        android:paddingTop="@dimen/space_12">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip">
+
+                <com.greentechplace.lvkebangapp.ui.wenda.MyEditText
+                    android:id="@id/et_desc_dayi"
+                    style="@style/dayi_input_desc"
+                    android:layout_height="200.0dip"
+                    android:background="@drawable/edt_all_background_pro"
+                    android:gravity="top"
+                    android:hint="@string/release_huati"
+                    android:maxLength="2500"
+                    android:textColorHint="@color/input_hint_gray" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/space_24"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@null">
+
+                    <ImageView
+                        android:id="@id/dayi_body_clear"
+                        android:layout_width="@dimen/space_24"
+                        android:layout_height="@dimen/space_24"
+                        android:layout_alignTop="@id/container_main"
+                        android:layout_toLeftOf="@id/container_main"
+                        android:layout_toStartOf="@id/container_main"
+                        android:background="@drawable/btn_clear_input_normal"
+                        android:drawableRight="@drawable/btn_clear_input_normal"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@id/container_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/dayi_body_zishuxianzhi"
+                        android:layout_toLeftOf="@id/dayi_body_zishuxianzhi"
+                        android:layout_toStartOf="@id/dayi_body_zishuxianzhi"
+                        android:text="("
+                        android:textColor="@color/gray_link_text_color"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@id/dayi_body_zishuxianzhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_clear_body"
+                        android:layout_toLeftOf="@id/tv_clear_body"
+                        android:layout_toStartOf="@id/tv_clear_body"
+                        android:text="886"
+                        android:textColor="@color/gray_link_text_color"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@id/tv_clear_body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="/50)"
+                        android:textColor="@color/gray_link_text_color"
+                        android:textSize="@dimen/small_text_size" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@id/label_container"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/space_64"
+                android:background="@drawable/edt_all_background_pro">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="\#"
+                    android:textColor="@color/black"
+                    android:textSize="18.0sp" />
+
+                <RadioGroup
+                    android:id="@id/my_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/space_64"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@id/label_first"
+                        style="@style/radiobutton_dayi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="9.0dip"
+                        android:background="@drawable/lable_bg"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@id/label_second"
+                        style="@style/radiobutton_dayi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="9.0dip"
+                        android:background="@drawable/lable_bg"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@id/label_third"
+                        style="@style/radiobutton_dayi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="9.0dip"
+                        android:background="@drawable/lable_bg"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@id/label_fourth"
+                        style="@style/radiobutton_dayi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="9.0dip"
+                        android:background="@drawable/lable_bg"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@id/label_fifth"
+                        style="@style/radiobutton_dayi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="9.0dip"
+                        android:background="@drawable/lable_bg"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@id/ed_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/space_64"
+                    android:layout_marginBottom="@dimen/space_30"
+                    android:background="@null"
+                    android:hint="@string/dayi_label_hint"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textColor="@color/main_black_6"
+                    android:textColorHint="@color/input_hint_gray"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/add_img_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30.0dip"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
